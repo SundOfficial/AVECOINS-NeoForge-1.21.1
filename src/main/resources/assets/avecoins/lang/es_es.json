@@ -1,0 +1,24 @@
+{
+  "item.avecoins.coppercoin": "Moneda de Cobre",
+  "item.avecoins.ironcoin": "Moneda de Hierro",
+  "item.avecoins.goldcoin": "Moneda de Oro",
+  "item.avecoins.diamondcoin": "Moneda de Diamante",
+  "item.avecoins.netheritecoin": "Moneda de Netherita",
+
+  "creativetab.avecoinsmod.items": "AVECOINS",
+
+  "tooltip.avecoins.coppercoin": "\n§fUna §6moneda simple §ffabricada a partir\nde un metal muy común.\n\n§7Presiona §e§lSHIFT §7para más info.",
+  "tooltip.avecoins.coppercoin.shift_down": "\n§7§lTIP: §fJunta varias monedas para subirlas de\ncategoría en la mesa de crafteo.\n\n§6§l© Cobre §f→ §7§l© Hierro",
+
+  "tooltip.avecoins.ironcoin": "\n§fUna §7moneda resistente §fforjada a partir\nde un metal refinado más fuerte.\n\n§7Presiona §e§lSHIFT §7para más info.",
+  "tooltip.avecoins.ironcoin.shift_down": "\n§7§lTIP: §fJunta varias monedas para subirlas de\ncategoría en la mesa de crafteo.\n\n§7§l© Hierro §f→ §e§l© Oro",
+
+  "tooltip.avecoins.goldcoin": "\n§fUna §emoneda lustrosa §felaborada a partir\nde un metal raro y precioso.\n\n§7Presiona §e§lSHIFT §7para más info.",
+  "tooltip.avecoins.goldcoin.shift_down": "\n§7§lTIP: §fJunta varias monedas para subirlas de\ncategoría en la mesa de crafteo.\n\n§e§l© Oro §f→ §b§l© Diamante",
+
+  "tooltip.avecoins.diamondcoin": "\n§fUna §bmoneda rara §fforjada a partir de\nuna gema extremadamente valiosa.\n\n§7Presiona §e§lSHIFT §7para más info.",
+  "tooltip.avecoins.diamondcoin.shift_down": "\n§7§lTIP: §fJunta varias monedas para subirlas de\ncategoría en la mesa de crafteo.\n\n§b§l© Diamante §f→ §8§l© Netherita",
+
+  "tooltip.avecoins.netheritecoin": "\n§fUna §8moneda excepcional §fforjada a partir del\nmaterial más raro y duradero.\n\n§7Presiona §e§lSHIFT §7para más info.",
+  "tooltip.avecoins.netheritecoin.shift_down": "\n§7§lTIP: §fTienes la §d§lmoneda más valiosa\n§fque existe."
+}

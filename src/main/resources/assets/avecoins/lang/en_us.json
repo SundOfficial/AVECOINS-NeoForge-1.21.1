@@ -1,0 +1,24 @@
+{
+  "item.avecoins.coppercoin": "Copper Coin",
+  "item.avecoins.ironcoin": "Iron Coin",
+  "item.avecoins.goldcoin": "Gold Coin",
+  "item.avecoins.diamondcoin": "Diamond Coin",
+  "item.avecoins.netheritecoin": "Netherite Coin",
+
+  "creativetab.avecoinsmod.items": "AVECOINS",
+
+  "tooltip.avecoins.coppercoin": "\n§fA §6simple coin §fmade from\na widely available metal.\n\n§7Press §e§lSHIFT §7for more info.",
+  "tooltip.avecoins.coppercoin.shift_down": "\n§7§lTIP: §fCombine multiple coins to upgrade\nthem in the Crafting Table.\n\n§6§l© Copper §f→ §7§l© Iron",
+
+  "tooltip.avecoins.ironcoin": "\n§fA §7sturdy coin §fforged from\na stronger refined metal.\n\n§7Press §e§lSHIFT §7for more info.",
+  "tooltip.avecoins.ironcoin.shift_down": "\n§7§lTIP: §fCombine multiple coins to upgrade\nthem in the Crafting Table.\n\n§7§l© Iron §f→ §e§l© Gold",
+
+  "tooltip.avecoins.goldcoin": "\n§fA §elustrous coin §fcrafted from\na rare and precious metal.\n\n§7Press §e§lSHIFT §7for more info.",
+  "tooltip.avecoins.goldcoin.shift_down": "\n§7§lTIP: §fCombine multiple coins to upgrade\nthem in the Crafting Table.\n\n§e§l© Gold §f→ §b§l© Diamond",
+
+  "tooltip.avecoins.diamondcoin": "\n§fA §brare coin §fforged from\na highly precious gemstone.\n\n§7Press §e§lSHIFT §7for more info.",
+  "tooltip.avecoins.diamondcoin.shift_down": "\n§7§lTIP: §fCombine multiple coins to upgrade\nthem in the Crafting Table.\n\n§b§l© Diamond §f→ §8§l© Netherite",
+
+  "tooltip.avecoins.netheritecoin": "\n§fAn §8exceptional coin §fforged from\nthe rarest and most durable material.\n\n§7Press §e§lSHIFT §7for more info.",
+  "tooltip.avecoins.netheritecoin.shift_down": "\n§7§lTIP: §fYou have the §d§lmost valuable\n§fcoin in existence."
+}
