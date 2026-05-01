@@ -15,72 +15,47 @@ import java.util.List;
 public class ModItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(AvecoinsMod.MOD_ID);
 
-    public static final DeferredItem<Item> COPPERCOIN = ITEMS.register("coppercoin",
-            () -> new Item(new Item.Properties()) {
-                @Override
-                public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
-                    if (Screen.hasShiftDown()) {
-                        tooltipComponents.add(Component.translatable("tooltip.avecoins.coppercoin.shift_down"));
-                    } else {
-                        tooltipComponents.add(Component.translatable("tooltip.avecoins.coppercoin"));
-                    }
-                    super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
+    public static class CoinItem extends Item {
+        private final String translationKey;
+
+        public CoinItem(Properties properties, String coinName) {
+            super(properties);
+            this.translationKey = "tooltip.avecoins." + coinName;
+        }
+
+        @Override
+        public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
+            String key = Screen.hasShiftDown() ? translationKey + ".shift_down" : translationKey;
+            Component fullText = Component.translatable(key);
+
+            String[] lines = fullText.getString().split("\\n", -1);
+
+            for (String line : lines) {
+                if (line.isEmpty()) {
+                    tooltipComponents.add(Component.empty());
+                } else {
+                    tooltipComponents.add(Component.literal(line));
                 }
-            });
+            }
+
+            super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
+        }
+    }
+
+    public static final DeferredItem<Item> COPPERCOIN = ITEMS.register("coppercoin",
+            () -> new CoinItem(new Item.Properties(), "coppercoin"));
 
     public static final DeferredItem<Item> IRONCOIN = ITEMS.register("ironcoin",
-            () -> new Item(new Item.Properties()) {
-                @Override
-                public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
-                    if (Screen.hasShiftDown()) {
-                        tooltipComponents.add(Component.translatable("tooltip.avecoins.ironcoin.shift_down"));
-                    } else {
-                        tooltipComponents.add(Component.translatable("tooltip.avecoins.ironcoin"));
-                    }
-                    super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
-                }
-            });
+            () -> new CoinItem(new Item.Properties(), "ironcoin"));
 
     public static final DeferredItem<Item> GOLDCOIN = ITEMS.register("goldcoin",
-            () -> new Item(new Item.Properties()) {
-                @Override
-                public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
-                    if (Screen.hasShiftDown()) {
-                        tooltipComponents.add(Component.translatable("tooltip.avecoins.goldcoin.shift_down"));
-                    } else {
-                        tooltipComponents.add(Component.translatable("tooltip.avecoins.goldcoin"));
-                    }
-                    super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
-                }
-            });
+            () -> new CoinItem(new Item.Properties(), "goldcoin"));
 
     public static final DeferredItem<Item> DIAMONDCOIN = ITEMS.register("diamondcoin",
-            () -> new Item(new Item.Properties()) {
-                @Override
-                public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
-                    if (Screen.hasShiftDown()) {
-                        tooltipComponents.add(Component.translatable("tooltip.avecoins.diamondcoin.shift_down"));
-                    } else {
-                        tooltipComponents.add(Component.translatable("tooltip.avecoins.diamondcoin"));
-                    }
-                    super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
-                }
-            });
+            () -> new CoinItem(new Item.Properties(), "diamondcoin"));
 
     public static final DeferredItem<Item> NETHERITECOIN = ITEMS.register("netheritecoin",
-            () -> new Item(new Item.Properties()) {
-                @Override
-                public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
-                    if (Screen.hasShiftDown()) {
-                        tooltipComponents.add(Component.translatable("tooltip.avecoins.netheritecoin.shift_down"));
-                    } else {
-                        tooltipComponents.add(Component.translatable("tooltip.avecoins.netheritecoin"));
-                    }
-                    super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
-                }
-            });
-
-
+            () -> new CoinItem(new Item.Properties(), "netheritecoin"));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
