@@ -1,7 +1,7 @@
 # AVECOINS 💰
 
 [![NeoForge Version](https://img.shields.io/badge/NeoForge-1.21.1-blue)](https://neoforged.net/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![License](https://img.shields.io/badge/License-All%20Rights%20Reserved-red)](LICENSE)
 
 **AVECOINS** adds a set of **material‑based coins** to use as a currency or decorative item in your Minecraft world or server.  
 
