@@ -41,7 +41,7 @@ From common copper to netherite, each coin has its own color, tooltip, and craft
 ## 📥 Installation
 
 1. Install **NeoForge** for Minecraft 1.21.1.
-2. Download `avecoins-1.21.1-neoforge-<version>.jar` from the [Releases](https://github.com/yourusername/avecoins/releases) page.
+2. Download `avecoins-neoforge-1.21.1-<version>.jar` from the [Releases](https://github.com/yourusername/avecoins/releases) page.
 3. Place the `.jar` into your `mods` folder.
 4. Launch the game.
 
