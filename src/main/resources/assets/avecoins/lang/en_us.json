@@ -20,5 +20,5 @@
   "tooltip.avecoins.diamondcoin.shift_down": "\n§7§lTIP: §fCombine multiple coins to upgrade\nthem in the Crafting Table.\n\n§b§l© Diamond §f→ §8§l© Netherite",
 
   "tooltip.avecoins.netheritecoin": "\n§fAn §8exceptional coin §fforged from\nthe rarest and most durable material.\n\n§7Press §e§lSHIFT §7for more info.",
-  "tooltip.avecoins.netheritecoin.shift_down": "\n§7§lTIP: §fYou have the §d§lmost valuable\n§fcoin in existence."
+  "tooltip.avecoins.netheritecoin.shift_down": "\n§7§lTIP: §fYou have the §d§lmost valuable §fcoin in existence."
 }
